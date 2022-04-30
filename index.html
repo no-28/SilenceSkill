@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>静艺 Silence Skill - 最好的计算机破坏器</title>
+        <style>
+            p, body {
+                margin: 0;
+            }
+            body {
+                background-color: rgb(31, 35, 62);
+                font-weight: 100;
+            }
+            #header {
+                height: 10vmax;
+                width: 100vw;
+                background-color: rgba(22, 23, 43, 0.8);
+                color: rgb(235, 235, 235);
+            }
+            #title {
+                font-style: italic;
+            }
+            .title {
+                font-size: 4vmax;
+                text-align: center;
+                padding-right: 15vmin;
+            }
+            #addr {
+                font-size: 2vmax;
+                text-align: center;
+                width: 40vmin;
+            }
+            #logo {
+                padding-top: 1vmax;
+            }
+            #page1 {
+                height: 70vmax;
+                color:rgb(235, 235, 235);
+                padding-left: 5vmin;
+            }
+            #title0 {
+                padding-right: 5vmin;
+            }
+            .title0 {
+                font-size: 5vmax;
+            }
+            #adj {
+                color: rgb(100, 110, 180);
+            }
+            #txt2 {
+                color:rgb(180, 180, 180);
+                padding-right: 15vmin;
+            }
+            .btn {
+                background-color: rgba(22, 23, 43, 0.8);
+                border-radius: 5px;
+                padding: 2vmax 7vmin 2vmax 7vmin;
+                color: white;
+                text-decoration: none;
+                font-size: 3vmax;
+            }
+            #page2 {
+                height: 80vmax;
+                background-color: rgb(22, 23, 43);
+                color:rgb(235, 235, 235);
+                padding-left: 5vmin;
+            }
+            .text {
+                font-size: 2.5vmax;
+                padding-right: 15vmin;
+            }
+            #page3 {
+                color:rgb(235, 235, 235);
+                padding-left: 5vmin;
+            }
+            .blue {
+                color: rgb(115, 124, 195);
+                padding-right: 5vmin;
+            }
+            #footer {
+                text-align: center;
+                background-color: rgb(22, 23, 43);
+                color:rgb(235, 235, 235);
+            }
+            #f1 {
+                height: 10vmax;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <p style="width: 5vmin;height: 10vmax;float: left;"></p>
+            <img src="./logow.png" style="height: 7vmax;float: left;margin-top: 1.5vmax;" alt="logo">
+            <p style="width: 2vmin;height: 10vmax;float: left;"></p>
+            <div id="logo" style="float: left;">
+                <p id="title" class="title">Silence Skill</p>
+                <p id="addr">no-28.vercel.app</p>
+            </div>
+        </div>
+        <div id="page1">
+            <p style="width: 10vmin;height: 20vmax;"></p>
+            <p id="title0" class="title0">破坏您的计算机更<span id="adj">快</span>使用静艺</p>
+            <p style="width: 10vmin;height: 3vmax;"></p>
+            <p id="txt2">
+                使用静艺让您的电脑变得更加丰富多彩和惊险刺激。静艺向您提供最优质、低价、安全地计算机破坏服务，无需注册，让您在最危险的计算机环境下工作和游戏。
+            </p>
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <a class="btn" href="./">立即下载</a>
+            <script>
+                var adj = document.getElementById("adj");
+                var adjtime = 1;
+                var color = 0;
+                var coloradder = 0.3
+                function changeadj() {
+                    if(adjtime == 0) {
+                        adj.innerHTML = "快";
+                        adjtime = 1;
+                    }
+                    else if(adjtime == 1) {
+                        adj.innerHTML = "容易";
+                        adjtime = 2;
+                    }
+                    else if(adjtime == 2) {
+                        adj.innerHTML = "安全";
+                        adjtime = 0;
+                    }
+                }
+                function changeadjcolor() {
+                    color += coloradder;
+                    adj.style.color = "rgba(" + (color+100) + ", " + (color+110) + ", " + (color+180) + ", 1)"
+                    if(color >= 20) {
+                        coloradder *= -1;
+                    }
+                    if(color <= -20) {
+                        coloradder *= -1;
+                    }
+                }
+                setInterval(changeadjcolor, 10);
+                setInterval(changeadj, 3000);
+            </script>
+        </div>
+        <div id="page2">
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <p class="title0 blue">什么是静艺？</p>
+            <p style="width: 10vmin;height: 3vmax;"></p>
+            <p class="text">静艺（Silence Skill），是世界上最好的计算机破坏工具。它开发自Macchiato，由Akuidefbug提供支持。</p>
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <img src="./logow.png" alt="静艺 Silence Skill 的Logo。" style="height: 40vmax;">
+        </div>
+        <div id="page3">
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <p class="title0 blue">
+                使用静艺，无需付费。
+            </p>
+            <p style="width: 10vmin;height: 3vmax;"></p>
+            <p class="text">
+                如果您只是正常使用静艺，并且不追求非常快速的摧毁和非常强烈的重击，那么您永远不需要为此付费。
+            </p>
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <a class="btn" href="./">立即下载</a>
+            <p style="width: 10vmin;height: 10vmax;"></p>
+        </div>
+        <div id="footer">
+            <p style="width: 10vmin;height: 5vmax;"></p>
+            <div id="f1">
+                <p style="width: 5vmin;height: 10vmax;float: left;"></p>
+                <img src="./logow.png" style="height: 7vmax;float: left;margin-top: 1.5vmax;" alt="logo">
+                <p style="width: 2vmin;height: 10vmax;float: left;"></p>
+                <div id="logo" style="float: left;">
+                    <p id="title" class="title">Silence Skill</p>
+                    <p id="addr">no-28.vercel.app</p>
+                </div>
+            </div>
+            <hr/>
+            <div>
+                <p style="width: 10vmin;height: 5vmax;"></p>
+                <p style="text-align: center;">
+                    Copyright &copy; 2022 No.28. All rights reserved.
+                </p>
+                <p style="width: 10vmin;height: 5vmax;"></p>
+            </div>
+        </div>
+    </body>
+</html>
